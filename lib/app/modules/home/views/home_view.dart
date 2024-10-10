@@ -4,6 +4,7 @@ import 'package:mobile_praktikm/app/modules/home/views/keluhanpelanggan.dart';
 import 'package:mobile_praktikm/app/modules/home/views/laporbug.dart';
 import 'package:mobile_praktikm/app/modules/home/views/managepaket_view.dart';
 import 'package:mobile_praktikm/app/modules/home/views/managevoucher_view.dart';
+import 'package:mobile_praktikm/app/modules/home/views/pembayaran_view.dart';
 import 'package:mobile_praktikm/app/modules/home/views/pengirimanbarang_view.dart';
 import 'package:mobile_praktikm/app/modules/home/views/updateprofileuser_view.dart';
 import '../controllers/home_controller.dart';
@@ -110,6 +111,12 @@ class HomeView extends GetView<HomeController> {
               },
               child: const Text('Go to Tambah Alamat Baru'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.to(() => pembayaran_view()); // Navigasi ke Pembayaran View
+              },
+              child: const Text('Go to Pembayaran View'),
+            )
           ],
         ),
       ),
